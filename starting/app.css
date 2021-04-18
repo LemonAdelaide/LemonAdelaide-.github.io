@@ -10,7 +10,7 @@ body {
 
 @font-face {
   font-family: myFirstFont;
-  src: url("fonts/bananasp.ttf");
+  src: url("https://lemonadelaide.github.io/LemonAdelaide-.github.io/fonts/bananasp.ttf");
 }
 :root {
   --delay-it: 2000ms;
