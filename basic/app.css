@@ -1,0 +1,56 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("fonts/bananasp.ttf");
+}
+:root {
+  --delay-it: 2000ms;
+  --text-shadow-color: gray;
+}
+
+body {
+  transition: none;
+  background-color: #f8d387;
+}
+
+body.doTrans {
+  transition: background-color var(--delay-it) linear;
+}
+body.doTrans .foreground {
+  transition: color var(--delay-it) linear, text-shadow var(--delay-it) linear;
+}
+
+section {
+  display: block;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  margin: auto;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section h1 {
+  font-family: myFirstFont, sans-serif;
+  display: block;
+  position: relative;
+  font-size: 172px;
+  text-align: center;
+  text-shadow: -6px -9px var(--text-shadow-color);
+}
+section div.socials {
+  font-family: myFirstFont, sans-serif;
+  font-size: 80px;
+  text-align: center;
+  color: white;
+  text-shadow: -6px -7px var(--text-shadow-color);
+}
